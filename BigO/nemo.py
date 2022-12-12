@@ -1,5 +1,9 @@
 # Big O notation
+import time
+
 nemo = ['nemo']
+everyone = ['dory', 'bruce', 'marlin', 'nemo', 'gill',
+            'bloat', 'nigel', 'squirt', 'darla', 'hank']
 
 
 def findNemo(array):
@@ -8,4 +12,4 @@ def findNemo(array):
             print('FOUND NEMO !')
 
 
-findNemo(nemo)
+findNemo(everyone)
