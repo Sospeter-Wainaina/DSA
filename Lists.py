@@ -71,3 +71,24 @@ print(myList)
 
 myList.remove('d')  # -----------------O(n)
 print(myList)
+
+# SEARCHING FOR AN ELEMENT IN A LIST
+my_list = [10, 20, 30, 40, 50, 60, 70, 80, 90]
+# in operator for searching for an element in a list
+target = 500
+if target in my_list:  # -------------------------O(n)
+    print(f'{target} is in the list')
+else:
+    print(f'{target} is not in the list')
+
+# Linear Search
+
+
+def linear_search(p_list, p_value):
+    for i, value in enumerate(p_list):  # -------------------O(n)
+        if value == p_value:  # -----------------------------O(1)
+            return i  # -------------------------------------O(1)
+    return f"{p_value} not found in {p_list}"
+
+
+print(linear_search(my_list, 60))
