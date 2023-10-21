@@ -92,3 +92,25 @@ def linear_search(p_list, p_value):
 
 
 print(linear_search(my_list, 60))
+
+a = [1, 2, 3]
+b = [4, 5, 6]
+c = a+b
+print(c)
+d = a*2
+print(d)
+# len returns the length of the list
+# max returns the item with the highest value in the list
+# min returns the item with the lowest value in the list
+# sum returns the sum of all elements in the list
+
+s_list = []
+while True:
+    inp = input("Enter a number :")
+    if inp == 'done':
+        break
+    value = float(inp)
+    s_list.append(value)
+average = sum(s_list)/len(s_list)
+print(f'Average is {average}')
+# List Comprehension
