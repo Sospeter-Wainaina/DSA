@@ -54,3 +54,20 @@ print(myList)
 list1 = [9, 8, 7, 6, 5]
 myList.extend(list1)  # ----------------O(n)
 print(myList)
+
+# Slice and Slice Lists
+myList = ['a', 'b', 'c', 'd', 'e', 'f']
+print(myList[:2])
+myList[:2] = ['x', 'y']
+print(myList)
+# Deleting an element from the list
+myList.pop(0)
+print(myList)
+myList.pop()  # -----------------------O(1)/O(n)
+print(myList)
+# Delete method
+del myList[3]  # ----------------------O(n)
+print(myList)
+
+myList.remove('d')  # -----------------O(n)
+print(myList)
