@@ -104,13 +104,57 @@ print(d)
 # min returns the item with the lowest value in the list
 # sum returns the sum of all elements in the list
 
-s_list = []
-while True:
-    inp = input("Enter a number :")
-    if inp == 'done':
-        break
-    value = float(inp)
-    s_list.append(value)
-average = sum(s_list)/len(s_list)
-print(f'Average is {average}')
+# s_list = []
+# while True:
+#     inp = input("Enter a number :")
+#     if inp == 'done':
+#         break
+#     value = float(inp)
+#     s_list.append(value)
+# average = sum(s_list)/len(s_list)
+# print(f'Average is {average}')
+
 # List Comprehension
+#new_list = [new_item for item in list]
+prev_list = [1, 2, 3, 4, 5]
+new_list = [i*2 for i in prev_list]
+print(new_list)
+
+language = 'Python'
+l = [l for l in language]
+print(l)
+
+a = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+print(a[::3])
+
+arr = [1, 2, 3, 4, 5, 6]
+for i in range(1, 6):
+    arr[i - 1] = arr[i]
+for i in range(0, 6):
+    print(arr[i], end=" ")
+a = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+a[::2] = 10, 20, 30, 40, 50
+print(a)
+
+arr = [[1, 2, 3, 4],
+       [4, 5, 6, 7],
+       [8, 9, 10, 11],
+       [12, 13, 14, 15]]
+for i in range(0, 4):
+    print(arr[i])
+
+fruit_list1 = ['Apple', 'Berry', 'Cherry', 'Papaya']
+fruit_list2 = fruit_list1
+fruit_list3 = fruit_list1[:]
+
+fruit_list2[0] = 'Guava'
+fruit_list3[1] = 'Kiwi'
+
+sum = 0
+for ls in (fruit_list1, fruit_list2, fruit_list3):
+    if ls[0] == 'Guava':
+        sum += 1
+    if ls[1] == 'Kiwi':
+        sum += 20
+
+print(sum)
