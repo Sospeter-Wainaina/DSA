@@ -15,4 +15,15 @@ def find_pairs(nums, target):
                 print(i, j)
 
 
-find_pairs([1, 2, 3, 3, 4, 5], 6)
+#find_pairs([1, 2, 3, 3, 4, 5], 6)
+
+def two_sum(nums, targ):
+    seen = {}
+    for i, num in enumerate(nums):
+        complement = targ-num
+        if complement in seen:
+            return [seen[complement], i]
+        seen[num] = i
+
+
+two_sum([1, 2, 3, 3, 4, 5], 6)
