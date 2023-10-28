@@ -8,5 +8,11 @@ def middle(lst):
     print(lst)
 
 
-myList = [1, 2, 3, 4]
-middle(myList)  # [2,3]
+# myList = [1, 2, 3, 4]
+# middle(myList)  # [2,3]
+
+def middle_values(list_p):
+    return list_p[1:-1]
+
+
+middle_values([1, 2, 3, 4])
