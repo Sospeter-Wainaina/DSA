@@ -13,6 +13,8 @@ class Employee:
         self.last = last
         self.pay = pay
         self.email = first + '.' +last + '@company.com'
+    def fullname(self):
+        return f"{self.first} {self.last}"
 
 emp_1 = Employee('Sospeter','Wainana',120000)
 emp_2 = Employee('Ivy','Mwaniki',120000)
@@ -20,6 +22,10 @@ emp_2 = Employee('Ivy','Mwaniki',120000)
 # we can see that it was easier to create the instances of the class.
 print(emp_1.email)
 print(emp_2.email)
+
+# We need to create methods which are functions inside a class that work with the object.
+print(emp_1.fullname())
+print(emp_2.fullname())
 
 # print(emp_1) #we can see that both of these instances were created at different locations in memory. #<__main__.Employee object at 0x00000256228419A0>
 # print(emp_2) #<__main__.Employee object at 0x0000025622841B20>
