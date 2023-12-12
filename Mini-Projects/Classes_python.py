@@ -27,6 +27,9 @@ print(emp_2.email)
 print(emp_1.fullname())
 print(emp_2.fullname())
 
+# we can also call the method using the class name.
+print(Employee.fullname(emp_1))
+
 # print(emp_1) #we can see that both of these instances were created at different locations in memory. #<__main__.Employee object at 0x00000256228419A0>
 # print(emp_2) #<__main__.Employee object at 0x0000025622841B20>
 
