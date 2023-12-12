@@ -27,6 +27,13 @@ class Employee:
         '''This is an alternative constructor that takes in a string separated with hyphens and creates an employee from it'''
         first, last, pay = emp_str.split('-')
         return cls(first,last,pay)
+    # static methods do not take in the instance or the class as the first argument
+    # they behave just like normal functions except that we include them in our classes because they have some logical connection with the class
+    @staticmethod
+    def is_workday(day):
+        if day.weekday() == 5 or day.weekday() == 6:
+            return False # this is a weekend
+        return True
 
 emp_1 = Employee('Sospeter','Wainaina',70000)
 emp_2 = Employee('Ivy','Mwaniki',70000)
@@ -49,3 +56,8 @@ emp_3 = Employee(first,last,pay)
 print(emp_3.email)
 emp_4 = Employee.emp_from_string(emp_str_4)
 print(emp_4.email)
+
+# static methods
+import datetime
+my_date = datetime.date(2023,12,12)
+print(Employee.is_workday(my_date))
