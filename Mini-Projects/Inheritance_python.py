@@ -22,7 +22,7 @@ class Employee:
             self.pay * self.raise_amount)  # here we are using self.raise_amount instead of Employee.raise_amount because we anticipate that the raise amount might change in the future and affect employees differently.
 
     @classmethod  # this is a decorator
-    def set_raise_amount(clscls, amount):
+    def set_raise_amount(cls, amount):
         Employee.raise_amount = amount
 
     @classmethod
